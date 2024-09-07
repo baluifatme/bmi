@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="assets/plugin/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/sass/master.min.css" />
+  </head>
+
+  <body>
+    <form
+      id="bmi-form"
+      class="mx-auto my-5 d-flex align-items-center justify-content-between flex-column"
+      onsubmit="calculateBMI(event)"
+    >
+      <div class="image-box">
+        <img src="./public/images/IMG_3484.PNG" alt="" class="" />
+      </div>
+      <h1 class="text-center pt-4 fw-bolder">BMI Calculator</h1>
+      <div class="input-box d-flex gap-5">
+        <input id="weight" placeholder=" weight(kg)" type="number" min="0" />
+        <input id="height" placeholder=" height(cm)" type="number" min="0" />
+      </div>
+      <div class="btn-box">
+        <button type="submit">Submit</button>
+        <button type="reset" onclick="clearoutput()">Clear</button>
+      </div>
+      <div class="info-box text-center">
+        <h4 id="heading"></h4>
+        <p id="bmi-output"></p>
+        <p id="message"></p>
+      </div>
+    </form>
+    <script src="assets/plugin/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

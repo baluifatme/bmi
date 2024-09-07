@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(209, 229, 213);
+  form {
+    width: 50vw;
+    height: 75vh;
+    box-shadow: 3px 4px 20px 3px;
+    background: rgb(137, 230, 82);
+    background: linear-gradient(
+      198deg,
+      rgba(137, 230, 82, 1) 6%,
+      rgba(255, 155, 138, 1) 92%
+    );
+    border-radius: 50px;
+
+    input {
+      width: 100%;
+      border: 2px solid red;
+      box-shadow: 3px 4px 20px 3px;
+    }
+    button {
+      padding: 6px;
+      border-radius: 15px;
+
+      &:nth-child(1) {
+        background-color: rgb(30, 223, 16) !important;
+      }
+      &:nth-child(2) {
+        background-color: rgb(223, 16, 16) !important;
+      }
+    }
+    .info-box {
+      max-width: 85%;
+      margin: 0 auto;
+      height: 150px;
+      margin-bottom: 20px;
+      
+    }
+  }
+}

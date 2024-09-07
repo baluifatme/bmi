@@ -1,0 +1,20 @@
+@media (max-width: 978px) {
+  body {
+    form {
+      width: 90%;
+      .input-box {
+        flex-direction: column !important;
+        width: 65%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  body {
+    form {
+      .image-box {
+        max-width: 25vw;
+      }
+    }
+  }
+}
